@@ -31,3 +31,5 @@ What is the output of above program?
 
 If you be attentive you would say: 1 or 0 because it depends on a compiler or more precisely on arguments of the compiler.
 
+Why the program above does not print "equal" or "unequal"?
+Please amend it.
