@@ -33,3 +33,12 @@ If you be attentive you would say: 1 or 0 because it depends on a compiler or mo
 
 Why the program above does not print "equal" or "unequal"?
 Please amend it.
+
+I'd like to propose to move the close bracket to the end of cout line
+
+auto main(int, char**) -> int {
+  int *p;
+  void *vp;
+  cout << (vp == p?"equal":"unequal");
+  return 0;
+}
