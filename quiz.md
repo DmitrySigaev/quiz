@@ -42,3 +42,26 @@ auto main(int, char**) -> int {
   cout << (vp == p?"equal":"unequal");
   return 0;
 }
+
+2.
+
+What is the output int the next example, given:
+
+
+#include <iostream>
+using namespace std;
+
+int &f() {
+	int i;
+	cout << "test";
+	return i;
+}
+
+auto main(int, char**) -> int {
+  int *p;
+  void *vp;
+  cout << (vp == p?" equal ":" unequal ") << f();
+  return 0;
+}
+
+Please give us a comment.
