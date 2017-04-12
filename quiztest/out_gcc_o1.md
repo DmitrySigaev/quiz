@@ -1,1 +1,1 @@
-equal
+test equal 0
