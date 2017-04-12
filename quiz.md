@@ -65,3 +65,9 @@ auto main(int, char**) -> int {
 }
 
 Please give us a comment.
+
+The above example illustrates the reckless reference using.
+The f() function returns a reference to local variable i. However, the storege for i vanishes as the functon returns.
+The other salient note is a output order to console. 
+
+test (un)queal 0
