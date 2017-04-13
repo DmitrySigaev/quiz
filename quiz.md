@@ -68,6 +68,19 @@ Please give us a comment.
 
 The above example illustrates the reckless reference using.
 The f() function returns a reference to local variable i. However, the storege for i vanishes as the functon returns.
+Thus, the funciton returns a reference to deallocated storage. For locals variables, the memory they comnsume is on the stack.
+FYI, when you a declare local vaiable, the size of it is known at a compile time, but memory allocation occurs during execution time.
+There are 3 place where memory can allocate. 
+
+malloc allocates memory on the process heap. Memory allocated using malloc() will ramain on heap until it is freed using free(). 
+alloca(alloca.h old compilers) allocate memory within the current function's stack frame. Memory allocated using alloca() will be removed from the stack when the current function returns. alloca is limited to small allocations.
+static variables allocate memory in data segment, keep the value.
+As I say above, automatic local variables allocate memory on the stack.
+
+some more additional information you can find 
+https://en.wikipedia.org/wiki/C_dynamic_memory_allocation
+
+
 The other salient note is a output order to console. 
 
 test (un)queal 0
